@@ -20,7 +20,7 @@ class BankForm extends Component {
   }
 
   submitHandle = (item, price) => {
-    if (!this.list.has(item) && this.props.expenseState.balance > price) {
+    if (!this.list.has(item) && this.props.expenseState.balance - price >= 0) {
       this.list.set(item, price);
       this.props.onUpdateWithdraw(+price);
       localStorage.setItem('items', JSON.stringify([...this.list]));
