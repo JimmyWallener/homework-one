@@ -12,7 +12,7 @@ class DepositForm extends Component {
 
   onSubmitHandle = (event) => {
     event.preventDefault();
-    this.deposit(event.target.children[1].value);
+    this.deposit(event.target.children[1].value.trim());
     event.target.children[1].value = '';
   };
 

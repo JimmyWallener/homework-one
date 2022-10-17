@@ -10,7 +10,10 @@ class WithdrawForm extends Component {
 
   onSubmitHandle = (event) => {
     event.preventDefault();
-    this.props.onSubmitHandle(event.target[0].value, event.target[1].value);
+    this.props.onSubmitHandle(
+      event.target[0].value.trim(),
+      event.target[1].value.trim()
+    );
     event.target[0].value = '';
     event.target[1].value = '';
   };
