@@ -4,10 +4,10 @@ import Button from '../UI/Button';
 import Input from '../UI/Input';
 
 class DepositForm extends Component {
-  constructor({ deposit }) {
+  constructor({ onDeposit }) {
     super();
     this.onSubmitHandle = this.onSubmitHandle.bind(this);
-    this.deposit = deposit;
+    this.deposit = onDeposit;
   }
 
   onSubmitHandle = (event) => {
@@ -20,7 +20,7 @@ class DepositForm extends Component {
     return (
       <form
         onSubmit={this.onSubmitHandle}
-        className='mt-5 flex-col flex items-center w-full mb-10'
+        className='flex-col flex items-center w-auto mb-10'
       >
         <Input
           label='Deposit Form'
@@ -32,7 +32,7 @@ class DepositForm extends Component {
             step: 1,
             placeholder: 'Enter amount to deposit',
             className:
-              'w-[40vw] text-center h-8 bg-slate-300 my-5 focus:bg-teal-400 h-5',
+              'w-full text-center h-10 bg-slate-300 my-5 focus:bg-teal-400',
           }}
         />
         <Button
@@ -40,7 +40,7 @@ class DepositForm extends Component {
           value={{
             type: 'submit',
             className:
-              'bg-black text-white p-2 font-bold tracking-wide uppercase flex w-[40vw] bg-blue-500 justify-center items-center rounded-xl ml-3',
+              'bg-black text-white p-2 font-bold tracking-wide uppercase w-full bg-blue-500 text-center rounded-xl',
           }}
         />
         <Button
@@ -48,7 +48,7 @@ class DepositForm extends Component {
           value={{
             type: 'reset',
             className:
-              'bg-black text-white mt-1 p-2 font-bold tracking-wide uppercase flex w-[40vw] bg-black-500 justify-center items-center rounded-xl ml-3',
+              'bg-black text-white mt-1 p-2 font-bold tracking-wide uppercase w-full text-center rounded-xl',
           }}
         />
       </form>

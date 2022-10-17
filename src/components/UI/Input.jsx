@@ -10,9 +10,15 @@ class Input extends Component {
   render() {
     return (
       <>
-        <label htmlFor={this.label} className='bg-gray-300 p-1 rounded-sm'>
-          {this.label}
-        </label>
+        {this.label && (
+          <label
+            htmlFor={this.label}
+            className='bg-gray-800 text-white font-bold mb-10 p-4 w-full text-center rounded-sm'
+          >
+            {this.label}
+          </label>
+        )}
+
         <input {...this.value}></input>
       </>
     );
