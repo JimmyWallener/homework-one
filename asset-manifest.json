@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/JimmyWallener/homework-one/static/css/main.933a3018.css",
-    "main.js": "/JimmyWallener/homework-one/static/js/main.79f50007.js",
-    "static/js/787.8c16d4e8.chunk.js": "/JimmyWallener/homework-one/static/js/787.8c16d4e8.chunk.js",
-    "index.html": "/JimmyWallener/homework-one/index.html",
-    "main.933a3018.css.map": "/JimmyWallener/homework-one/static/css/main.933a3018.css.map",
-    "main.79f50007.js.map": "/JimmyWallener/homework-one/static/js/main.79f50007.js.map",
-    "787.8c16d4e8.chunk.js.map": "/JimmyWallener/homework-one/static/js/787.8c16d4e8.chunk.js.map"
+    "main.css": "/homework-one/static/css/main.933a3018.css",
+    "main.js": "/homework-one/static/js/main.f9e96c7b.js",
+    "static/js/787.8c16d4e8.chunk.js": "/homework-one/static/js/787.8c16d4e8.chunk.js",
+    "index.html": "/homework-one/index.html",
+    "main.933a3018.css.map": "/homework-one/static/css/main.933a3018.css.map",
+    "main.f9e96c7b.js.map": "/homework-one/static/js/main.f9e96c7b.js.map",
+    "787.8c16d4e8.chunk.js.map": "/homework-one/static/js/787.8c16d4e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.933a3018.css",
-    "static/js/main.79f50007.js"
+    "static/js/main.f9e96c7b.js"
   ]
 }
